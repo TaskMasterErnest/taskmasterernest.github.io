@@ -1,7 +1,7 @@
 +++
 title = 'Journey to DevOps'
 date = 2023-07-08T07:07:07+01:00
-draft = true
+draft = false
 categories = ['personal'] 
 tags = ['learning', 'blogging']
 +++

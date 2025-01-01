@@ -1,7 +1,7 @@
 +++
 title = 'Performance Profiling in Go: A Tale of Two Word Counters'
 date = 2024-11-01T07:07:07+01:00
-draft = true
+draft = false
 categories = ['software development'] 
 tags = ['go', 'performance']
 +++

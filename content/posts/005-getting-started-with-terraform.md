@@ -1,7 +1,7 @@
 +++
 title = 'A Primer on Getting (UN)Comfortable with Terraform'
 date = 2023-08-03T07:07:07+01:00
-draft = true
+draft = false
 categories = ['devops'] 
 tags = ['terraform']
 +++

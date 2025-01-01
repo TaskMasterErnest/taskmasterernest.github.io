@@ -1,7 +1,7 @@
 +++
 title = 'Using The Return Keyword in Go'
 date = 2023-08-02T07:07:07+01:00
-draft = true
+draft = false
 categories = ['software development'] 
 tags = ['go']
 +++

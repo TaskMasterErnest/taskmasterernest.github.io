@@ -1,7 +1,7 @@
 +++
 title = 'Infrastructure Deployment with Terraform'
 date = 2023-09-07T07:07:07+01:00
-draft = true
+draft = false
 categories = ['devops', 'cloud'] 
 tags = ['terraform', 'aws', 'linux']
 +++

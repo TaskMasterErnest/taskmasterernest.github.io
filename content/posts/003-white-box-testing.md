@@ -1,7 +1,7 @@
 +++
 title = 'White-Box Testing'
 date = 2023-07-24T07:07:07+01:00
-draft = true
+draft = false
 categories = ['software development'] 
 tags = ['testing']
 +++

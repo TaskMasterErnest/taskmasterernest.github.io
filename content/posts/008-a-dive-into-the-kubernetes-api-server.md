@@ -1,7 +1,7 @@
 +++
 title = 'How To Communicate With The Kubernetes API (API Server)'
 date = 2024-10-17T07:07:07+01:00
-draft = true
+draft = false
 categories = ['devops', 'cloud'] 
 tags = ['linux', 'kubernetes']
 +++

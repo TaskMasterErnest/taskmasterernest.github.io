@@ -1,7 +1,7 @@
 +++
 title = 'Adding an SSH Key to an EC2 Server (Resolving "Too many authentication failures" issue)'
 date = 2023-10-31T07:07:07+01:00
-draft = true
+draft = false
 categories = ['devops', 'cloud'] 
 tags = ['aws', 'linux', 'ssh']
 +++
