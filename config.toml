@@ -1,0 +1,50 @@
+baseURL = "https://tskmstr.github.io"
+title = "tskmstr"
+theme = "smol"
+paginate = 4
+
+# Enable Emojis
+enableEmoji = true
+
+# Parameters
+[params]
+    subtitle = "Gone Fishing! - the embodiment of automation."
+    dateFmt = "Jan 2, 2006"
+
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1 
+
+  [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2 
+
+  [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 3
+
+  [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 4
+
+# Footer
+  [[menu.footer]]
+        name = "Github"
+        url = "https://github.com/TaskMasterErnest/"
+        weight = 1 
+
+    [[menu.footer]]
+        name = "LinkedIn"
+        url = "https://www.linkedin.com/in/ernest-woeli-klu/"
+        weight = 2 
+
