@@ -10,6 +10,7 @@ enableEmoji = true
 [params]
     subtitle = "Gone Fishing! - the embodiment of automation."
     dateFmt = "Jan 2, 2006"
+    nuggets = "nuggets"
 
 # Header
 [menu]
@@ -20,22 +21,28 @@ enableEmoji = true
         weight = 1 
 
   [[menu.main]]
+        identifier = "nuggets"
+        name = "Nuggets"
+        url = "/nuggets/"
+        weight = 2
+
+  [[menu.main]]
         identifier = "categories"
         name = "Categories"
         url = "/categories/"
-        weight = 2 
+        weight = 3 
 
   [[menu.main]]
         identifier = "tags"
         name = "Tags"
         url = "/tags/"
-        weight = 3
+        weight = 4
 
   [[menu.main]]
         identifier = "about"
         name = "About"
         url = "/about/"
-        weight = 4
+        weight = 5
 
 # Footer
   [[menu.footer]]
@@ -47,4 +54,3 @@ enableEmoji = true
         name = "LinkedIn"
         url = "https://www.linkedin.com/in/ernest-woeli-klu/"
         weight = 2 
-
