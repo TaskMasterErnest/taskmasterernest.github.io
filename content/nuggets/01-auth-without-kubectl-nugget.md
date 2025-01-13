@@ -1,7 +1,7 @@
 ---
 title: "Nugget: Check Kubernetes Pod Logs Without kubectl"
 description: "Authenticating to K8s cluster without kubectl"
-image: "https://github.com/TaskMasterErnest/smol/tree/master/images/tskmstr.jpg"
+image: "https://raw.githubusercontent.com/TaskMasterErnest/smol/master/images/tskmstr.jpg"
 date: 2025-01-11T12:00:00+00:00
 draft: false
 tags: ["kubernetes", "debugging", "tips"]

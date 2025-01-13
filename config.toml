@@ -12,7 +12,7 @@ enableEmoji = true
     dateFmt = "Jan 2, 2006"
     nuggets = "nuggets"
     description = "The World of tskmstr"
-    defaultImage = "https://github.com/TaskMasterErnest/smol/tree/master/images/tskmstr.jpg"
+    defaultImage = "https://raw.githubusercontent.com/TaskMasterErnest/smol/master/images/tskmstr.jpg"
 
 # Header
 [menu]
