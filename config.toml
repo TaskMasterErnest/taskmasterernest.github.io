@@ -11,6 +11,8 @@ enableEmoji = true
     subtitle = "Gone Fishing! - the embodiment of automation."
     dateFmt = "Jan 2, 2006"
     nuggets = "nuggets"
+    description = "The World Of tskmstr"
+    defaultImage = "/content/img/cover.jpg"
 
 # Header
 [menu]
