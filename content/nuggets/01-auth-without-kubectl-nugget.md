@@ -5,7 +5,7 @@ image: "https://raw.githubusercontent.com/TaskMasterErnest/smol/master/images/ts
 date: 2025-01-11T12:00:00+00:00
 draft: false
 tags: ["kubernetes", "debugging", "tips"]
-categories: ["devops"]
+categories: ["devops", "linux"]
 ---
 
 Ever needed to check pod logs but couldn't use `kubectl`? Here's a quick way using the Kubernetes API directly:
