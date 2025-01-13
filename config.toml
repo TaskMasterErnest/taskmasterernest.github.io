@@ -3,6 +3,7 @@ title = "tskmstr"
 theme = "smol"
 paginate = 4
 
+
 # Enable Emojis
 enableEmoji = true
 
