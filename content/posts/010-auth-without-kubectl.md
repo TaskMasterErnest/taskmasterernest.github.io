@@ -8,7 +8,9 @@ tags: ["kubernetes", "debugging", "tips"]
 categories: ["devops", "linux"]
 ---
 
-Ever needed to check pod logs but couldn't use `kubectl`? Here's a quick way using the Kubernetes API directly:
+Ever needed to check pod logs but couldn't use `kubectl`? 
+<!--more-->
+Here's a quick way using the Kubernetes API directly:
 
 ```bash
 curl -k \

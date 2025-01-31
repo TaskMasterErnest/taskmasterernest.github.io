@@ -1,21 +1,24 @@
----
-title: "Nugget: Generating Usable Self-Signed Certificates In & For The Modern World"
-description: "This is a short piece on how to generate self-signed certificates in 2025 & beyond"
-image: "https://raw.githubusercontent.com/TaskMasterErnest/smol/master/images/tskmstr.jpg"
-date: 2025-01-31T12:00:00+00:00
-draft: false
-tags: ["kubernetes", "ssl/tls", "tips"]
-categories: ["devops", "linux"]
----
++++
+title = "Nugget: Generating Usable Self-Signed Certificates For The Modern World"
+description = "This is a short piece on how to generate self-signed certificates in 2025 & beyond"
+image = "https://raw.githubusercontent.com/TaskMasterErnest/smol/master/images/tskmstr.jpg"
+date = 2025-01-31T07:07:07+01:00
+draft = false
+categories = ["devops", "linux"]
+tags = ["kubernetes", "ssl/tls", "tips"]
++++
 
-### **Generating Self-Signed Certificates (Without Getting Fired)**  
-Look, I get it. Certificates are a necessary evil, and now they’ve gone and changed the rules on us. Gone are the days of just slapping a **Common Name (CN)** on your certificate and calling it a day. Now you need **SANs (Subject Alternative Names)** because apparently, the internet decided CNs are as outdated as dial-up. *Sigh.*  
+Certificates are a necessary evil, and now they’ve gone and changed the rules on us. 
+
+<!--more-->
+
+Gone are the days of just slapping a **Common Name (CN)** on your certificate and calling it a day. Now you need **SANs (Subject Alternative Names)** because apparently, the internet decided CNs are as outdated as dial-up. *Sigh.*  
 
 Let’s cut through the noise. Here’s how to generate a modern, SANs-compliant certificate without losing your sanity.  
 
 ---
 
-### **What Even Are These Terms?**  
+## **What Even Are These Terms?**  
 - **CN (Common Name)**:  
   The old way to specify a server’s hostname (e.g., `webhook-server.webhook.svc`). Now deprecated for hostname validation but still required in certificates because… *tradition?*  
 
@@ -71,3 +74,5 @@ openssl req -x509 -newkey rsa:2048 \
 ### **Why This Works**  
 - **SANs Over CN**: Kubernetes (and modern TLS) checks the `alt_names` list, not the CN.  
 - **Future-Proofing**: This certificate will actually work in 2025.  
+
+![lets-go-fishing](https://th.bing.com/th/id/R.a801c5e00d5fb915e939a5c30385b941?rik=7ygoHJl4WuKeJQ&riu=http%3a%2f%2fwww.animatedimages.org%2fdata%2fmedia%2f157%2fanimated-fishing-image-0131.gif&ehk=rQq%2bd2QDkwjFPyX1hPoyHfP%2bFC7iis9SSANWH6%2bO9dk%3d&risl=&pid=ImgRaw&r=0)
