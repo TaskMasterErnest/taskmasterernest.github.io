@@ -3,7 +3,7 @@ title = "Kubernetes Admission Controllers: A Dive Into Policy Enforcement"
 description = "A study on Kubernetes Admission Controllers and how to build, deploy, and use one in a cluster."
 image = "https://raw.githubusercontent.com/TaskMasterErnest/smol/master/images/tskmstr.jpg"
 date = 2025-02-19T09:57:07+01:00
-draft = true
+draft = false
 categories = ["kubernetes"]
 tags = ["admission controllers", "webhooks"]
 +++
