@@ -15,6 +15,11 @@ enableEmoji = true
     description = "The World of tskmstr"
     defaultImage = "https://raw.githubusercontent.com/TaskMasterErnest/smol/master/images/tskmstr.jpg"
 
+[privacy]
+  [privacy.youTube]
+    disable = false
+    privacyEnhanced = false
+
 # Header
 [menu]
   [[menu.main]]
