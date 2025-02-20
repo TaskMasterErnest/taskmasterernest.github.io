@@ -378,7 +378,7 @@ A simple visual of the process flow that utilizes the ValidatingAdmissionWebhook
 
 ---
 
-## How Does This All Tie Into Policy Enforcement in Kubernetes
+## How Does This All Tie Into Policy Enforcement in Kubernetes?
 Admission controllers and admission webhooks are fundamental to policy enforcement in Kubernetes. They are the enforcement points within the Kubernetes API request lifecycle where policies can be implemented and applied.
 
 Policy enforcement in Kubernetes is about ensuring that the cluster and its resources are managed and used according to defined rules and best practices.
@@ -395,11 +395,11 @@ PS: Your favourite policy enforcer in Kubernetes, eg. GateKeeper, is an admissio
 
 ---
  
-> Now the hard part is over. We will now go through deploying our webhook service to a Kubernetes cluster and testing if the Admission Controllers and webhooks work the way we set them up.
+> We've tackled the complexities, and now it's time to bring our webhook to life. We'll deploy it to Kubernetes and then put our admission controllers and webhooks through their paces to confirm everything is configured correctly.
 
 ---
 
-## Setting up the Webhook
+## Setting up the Kubernetes Cluster
 The highest pre-requisite for this stage is to have a Kubernetes cluster on which we can test the admission controller and the custom webhooks we have written.
 
 The next highest pre-requisite is to ensure that the Kubernetes cluster has the necessary admission plugins. The two(2) very important ones are the `MutatingAdmissionWebhook` and `ValidatingAdmissionWebhook`.
@@ -434,17 +434,18 @@ Also, it is necessary to have the following programs locked and loaded:
 
 ---
 
+Ready to try it out? Follow the instructions in the README file of [this GitHub repository](https://github.com/TaskMasterErnest/GoWild/tree/main/admissionWebhook) to deploy and test the webhook.
+
+---
+
 > NOTE: The webhooks work over HTTPS, so you need to generate secure keys and certificates for the authentication process.
 
 > Check out this link [here](https://taskmasterernest.github.io/posts/011-generating-self-signed-certs/) for the walkthrough on how to create a self-signed certificate that will be used in-cluster.
 
 ---
 
-Follow the README file in the [Github repo](https://github.com/TaskMasterErnest/GoWild/tree/main/admissionWebhook) linked up above to successfully deploy and test your newly written webhook.
-
-
 ## BONUS!!
-I leave you with a song that was playing when I was literally writing this last line.
+As a point of interest, the subsequent song was playing during the composition of the final sentence. Enjoy!!
 {{< youtube JWIqrKhP2Kg >}}
 
 
