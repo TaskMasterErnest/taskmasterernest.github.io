@@ -377,6 +377,23 @@ A simple visual of the process flow that utilizes the ValidatingAdmissionWebhook
 ![Visual of Validating Admission Webhook flow](/img/request-flow-with-validating-admission-webhook.png)
 
 ---
+
+## How Does This All Tie Into Policy Enforcement in Kubernetes
+Admission controllers and admission webhooks are fundamental to policy enforcement in Kubernetes. They are the enforcement points within the Kubernetes API request lifecycle where policies can be implemented and applied.
+
+Policy enforcement in Kubernetes is about ensuring that the cluster and its resources are managed and used according to defined rules and best practices.
+These policies cover various aspects, including:
+- Security: ensuring that workloads and configurations adhere to security standards (e.g., preventing privileged containers, enforcing network policies, requiring security contexts).
+- Resource Management: Controlling resource consumption, setting limits and quotas, and ensuring fair resource sharing (e.g., enforcing resource requests and limits).
+- Operational Best Practices: Enforcing organizational standards, naming conventions, required labels/annotations, and other operational rules (e.g., mandating specific annotations for cost tracking, requiring team labels).
+
+Admission webhooks are what are used to enforce these policies that have been laid out. In this case, they make sure the requests being sent to the API server conform to the policy that has been set—either via mutating them and/or validating them.
+
+A great advantage of admission webhooks are that, they can be used to define custom policies that match the user's or organization's needs.
+
+PS: Your favourite policy enforcer in Kubernetes, eg. GateKeeper, is an admission webhook in disguise.
+
+---
  
 > Now the hard part is over. We will now go through deploying our webhook service to a Kubernetes cluster and testing if the Admission Controllers and webhooks work the way we set them up.
 
@@ -425,10 +442,11 @@ Also, it is necessary to have the following programs locked and loaded:
 
 Follow the README file in the [Github repo](https://github.com/TaskMasterErnest/GoWild/tree/main/admissionWebhook) linked up above to successfully deploy and test your newly written webhook.
 
-This is kinda an anti-climatic ending to this very interesting article but I hope you had fun and learned a lot.
 
+## BONUS!!
 I leave you with a song that was playing when I was literally writing this last line.
 {{< youtube JWIqrKhP2Kg >}}
+
 
 
 ![lets-go-fishing](https://th.bing.com/th/id/R.a801c5e00d5fb915e939a5c30385b941?rik=7ygoHJl4WuKeJQ&riu=http%3a%2f%2fwww.animatedimages.org%2fdata%2fmedia%2f157%2fanimated-fishing-image-0131.gif&ehk=rQq%2bd2QDkwjFPyX1hPoyHfP%2bFC7iis9SSANWH6%2bO9dk%3d&risl=&pid=ImgRaw&r=0)
